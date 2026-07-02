@@ -6,12 +6,12 @@
 
 Review status page updates for timestamps, scope, and next-update promises. It solves review drift by turning plain-text plans into deterministic CI-friendly findings.
 
-## Input Contract 13
+## Input Contract
 
 Accepts status page update. The reader supports plain text, JSON, JSONL, and CSV so the
 tool can fit into scripts, CI jobs, and review exports.
 
-## CLI Walkthrough 13
+## CLI Walkthrough
 
 ```bash
 python -m pip install -e ".[dev]"
@@ -20,7 +20,7 @@ status-page-lint examples/sample.txt --json --fail-on medium
 python -m status_page_lint --help
 ```
 
-## Rule Surface 13
+## Rule Surface
 
 | Rule | Severity | Meaning |
 |---|---:|---|
@@ -28,7 +28,7 @@ python -m status_page_lint --help
 | `unknown-scope` | medium | scope is unclear |
 | `no-next-update` | low | next update time missing |
 
-## Validation Notes 13
+## Validation Notes
 
 ```bash
 ruff check .
