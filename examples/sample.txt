@@ -1,0 +1,1 @@
+degraded service time missing scope unknown next_update none
